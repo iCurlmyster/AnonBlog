@@ -1,24 +1,24 @@
 
-<%= render 'sidebar' %>
 
+<body class="posts_body">
 <div class="content">
 
-<table class="table table-hover" id="index_table">
- <thead>
-    <tr>
-      <th class="text-center" id="text">Title</th>
-      
-    </tr>
-    </thead>
+    <div class="posts_column">
+        <% @posts.each do |post| %>
+        <div class="blog_post">
+            <p id="post_title"><%= post.title.capitalize %></p>
+            <% if (post.body.length > 55) then %>
+                <p> <%= post.body[0,40] %>... <%= link_to '<Read More>',post,{:style =>'color:#CCFFFF;'}%> </p>
+            <% else %>
+                <p> <%= post.body %> </p>
+            <%end%>
 
-  
-    <% @posts.each do |post| %>
-      <tr>
-        <td class="text-center"><%= link_to post.title, post %></td>
-       <!-- <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      </tr>
-    <% end %>
-  
-</table>
+        </div>
+        <% end %>
+    </div>
+
 
 </div>
+</body>
+
+<%= render 'sidebar' %>

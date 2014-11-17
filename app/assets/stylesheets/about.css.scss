@@ -3,15 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#about_div {
-    background-color: #FFFFDB;
-    height: 300px;
-    width: 500px;
-    position: relative;
-    align-content: center;
-    p {
+.about_page {
+    
+    background: url('http://4.bp.blogspot.com/-AV0gquAOd0M/T5UrWyYu9lI/AAAAAAAAAMo/oc_PxS30r3Q/s1600/black-white-nostalgia.jpg');
+    #about_div {
+        
+        background: rgba(10,10,10,0.7);
+        height: 300px;
+        width: 500px;
         position: relative;
-        align-content: center;
+        margin: 0 auto;
+        margin-top: 15%; 
+        padding: 15px;
+        p {
+            color: #CCFFFF;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            margin-top: 15%;
+            font-family: monospace;
+            font-size: 15pt;
+        }
     }
 }
 
@@ -27,7 +39,7 @@
     top: 0%;
     margin-left: 0%;
     color: #CCFFFF;
-    background-color: #FFFFDB;
+    background: rgba(0,0,0,0.4);
     .bar_header {
         display: inline;
         float: right;
@@ -36,6 +48,7 @@
     .bar_links {
         display: inline;
         padding-left: 2px;
+        color: #E0E0E0;
     }
 }
 
@@ -51,8 +64,86 @@
     position: relative;
     top: 25px;
 }
-
-#index_table {
-    //width: 500px;   
+.posts_body {
     
+    background-image: url('http://3.bp.blogspot.com/-QI7LiPQQuMg/UC5DnITWIVI/AAAAAAABlME/LcJOGQVEmks/s1600/Vintage+Black+&+White+Photographs+of+The+Plunge+(6).jpg');
+    background-size: contain;
+    .posts_column {
+
+        background: rgba(1,1,1,0.7);
+//        border-right: 1px solid #E0E0E0;
+//        border-left: 1px solid #E0E0E0;
+        position: relative;
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 5px;
+        .blog_post {
+
+            background: rgba(5,5,5,0.5);
+            
+            border: 2px solid rgba(0,245,233,0.2);
+            height: 100px;
+            width: 350px;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 20px;
+            p {
+                color: #E0E0E0;
+                padding: 4px;
+                font-family: monospace;
+            }
+            #post_title {
+                color: #CCFFFF;
+                font-family: monospace;
+            }
+        }
+    }
+}
+.show_page {
+    
+    background: url('http://www.banner4sale.com/wordpress/wp-content/uploads/2012/08/waiting_in_grand_central_station-690x492.jpeg');
+    background-size: cover;
+    .show_body {
+
+        background: rgba(1,1,1,0.7);
+        border: 1px solid #E0E0E0;
+        position: relative;
+        width: 700px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        padding-top: 5px;
+        margin-top: 10%;
+
+        .show_post_title {
+
+            font-family: monospace;
+            margin: 0 auto;
+            color: #CCFFFF;
+            font-size: 15pt;
+        }
+        .show_post_body {
+
+            position: relative;
+            margin: auto;
+            color: #CCFFFF;
+            height: 5px;
+        }
+    }
+}
+
+.new_page {
+
+    background: url('https://beingisbewildering.files.wordpress.com/2010/02/bruges-final.jpg') center center;
+    background-size: 100% 1000px;
+    .new_form {
+    
+        background: rgba(4,4,4,0.4);
+        position: relative;
+        margin: auto;
+        margin-top: 10%;
+        width: 800px;
+        
+    }
 }

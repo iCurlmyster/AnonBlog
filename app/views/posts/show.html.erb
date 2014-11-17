@@ -1,15 +1,19 @@
-<%= render 'sidebar' %>
+
 <div class="content">
-<p id="notice"><%= notice %></p>
+    <body class="show_page" >
+        <div class="show_body">
 
-<p style="padding:'20px'">
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+            <p id="notice"><%= notice %></p>
 
-<p style="padding:'20px'">
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
+            <p class="show_post_title">
+              <%= @post.title.capitalize %>
+            </p>
 
+            <p class="show_post_body">
+              <%= simple_format(@post.body,{:style => 'color:#E0E0E0; font-family:monospace;font-size:14pt;'}) %>
+            </p>
+        </div>
+    </body>
 </div>
+
+<%= render 'sidebar' %>
