@@ -1,3 +1,58 @@
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#about_div {
+    background-color: #FFFFDB;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    align-content: center;
+    p {
+        position: relative;
+        align-content: center;
+    }
+}
+
+
+#text {
+    color: #CCFFFF;
+}
+
+.sidebar {
+    position: fixed;
+    height: 25px;
+    width: 100%;
+    top: 0%;
+    margin-left: 0%;
+    color: #CCFFFF;
+    background-color: #FFFFDB;
+    .bar_header {
+        display: inline;
+        float: right;
+        padding-right: 2px;
+    }
+    .bar_links {
+        display: inline;
+        padding-left: 2px;
+    }
+}
+
+.field {
+    padding: 20px;
+}
+
+.actions {
+    padding: 20px;
+}
+
+.content {
+    position: relative;
+    top: 25px;
+}
+
+#index_table {
+    //width: 500px;   
+    
+}
