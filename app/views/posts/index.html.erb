@@ -8,9 +8,9 @@
         <div class="blog_post">
             <p id="post_title"><%= post.title.capitalize %></p>
             <% if (post.body.length > 55) then %>
-                <p> <%= post.body[0,40] %>... <%= link_to '<Read More>',post,{:style =>'color:#CCFFFF;'}%> </p>
+                 <%= simple_format("#{post.body[0,40].strip}... #{link_to '<Read More>',post,{:style =>'color:#CCFFFF;'}}") %> 
             <% else %>
-                <p> <%= post.body %> </p>
+                <p> <%= simple_format(post.body.strip) %> </p>
             <%end%>
 
         </div>
